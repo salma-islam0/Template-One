@@ -17,8 +17,8 @@ body {
 :root {
     --margin :20px;
     --padding :20px;
-    --main-color :rgb(41, 175, 175);    
-    --secondary-color: #2c4755;
+    --main-color :rgb(13, 42, 80);    
+    --secondary-color: #487992;
     
 }
 .page {
@@ -27,18 +27,16 @@ body {
 }
 
 .container .title {
-    margin: 20px auto;
+    margin-top: -25px ;
+    margin-bottom: -20px ;
     width: 800px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
-    position: absolute;
     left: 50%;
-    transform: translate(-50%);
     text-align: center;
-    margin-top: 50px;
 }
 .container .title  h2 {
     opacity: 0.15;
@@ -112,10 +110,10 @@ body {
 .header .links .icon {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 40px;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
 }
 .links .icon span:first-child {
@@ -141,8 +139,8 @@ body {
 .links ul {
     background-color: #f6f6f6;
     position: absolute;
-    right: 0px;
-    top: 100% ;
+    left: 0px;
+    top: 45% ;
     list-style: none;
     padding: 0 5px;
     width: 200px;
@@ -163,7 +161,7 @@ body {
     display: inline-block;
     position: absolute;
     top: -20px;
-    right: 7.5px;
+    left: 7.5px;
 }
 .links ul li {
     margin: 10px;
@@ -184,8 +182,13 @@ body {
 /* End Of Header  */
 /* Start of Cover */
 
+
+
+
+
+
 .cover {
-    background-image: url(../imgs/image.jpeg);
+    background-image: url(../nature-photography-simple-background-wallpaper-thumb.jpg);
     height: calc(100vh - 55px);
     background-size: cover;
     display: flex;
@@ -211,7 +214,7 @@ img.land {
     z-index: -1;
 }
 h1 {
-    color: #10cab7;
+    color: #138b7f;
     margin: 10px !important; 
 }
 p.land {
@@ -220,18 +223,40 @@ p.land {
     line-height: 1.7;
 
 }
+
+
+
+/* ============== */
+.cover {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* Ideas Start*/
 .ideas .container2 .fa-wand-magic-sparkles,
 .ideas .container2 .fa-earth-asia,
 .ideas .container2 .fa-gem {
-    color: rgb(41, 175, 175);
+    color: #ebeced;
     font-size:40px ;
     text-align: center;
 }
 .ideas {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #f6f6f6;
+    background-color: #5ebdc1b8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,6 +278,7 @@ p.land {
     line-height: 1.8;
     margin-top: 30px;
     font-size: 17px;
+    color: black;
 }
 .ideas .container2 h3 {
     font-weight: 800;
@@ -269,12 +295,18 @@ p.land {
     align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
+    color: black;
 }
 #services .container {
     margin: 20px;
     display: flex;
     justify-content: space-between;
 }
+ 
+h2 {
+    color: black;
+}
+
 /* Services Content Start */
 #services .container .services-content {
     margin-top: 100px;
@@ -288,6 +320,7 @@ p.land {
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(305px , 1fr));
     gap: 30px;
+    color: black;
 }
 
 #services .container .services-content div {
@@ -296,7 +329,7 @@ p.land {
 #services .container .services-content i {
     margin: 0;
     display: inline-block;
-    color: var(--main-color);
+    color: #5ebdc1b8;
     font-size: 30px;
     padding: 10px;
 }
@@ -365,7 +398,7 @@ p.land {
     justify-content: center;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #f6f6f6;
+    background-color: #5ebdc1b8;
     width: 100%;
 }
 #portfolio .container {
@@ -384,10 +417,17 @@ p.land {
     justify-content: space-between;
     gap: 20px;
     width: 1000px;
-    margin: 130px 20px 0 ;
+    margin: 20px 0 ;
+    color: black;
 }
+
+#portfolio h2, #portfolio span {
+    opacity: 0.9;
+    color: black;
+}
+
 #portfolio .container .portfolio-content div {
-    background-color: white; 
+    background-color: #ebeced; 
 }
 #portfolio .container .portfolio-content img {
     width: 100%;
@@ -416,7 +456,9 @@ p.land {
     display: flex;
     justify-content: center;
     width: 100%;
+    color: black;
 }
+
 /* Start of Content  */
 #about .container .content {
     display: grid;
@@ -425,7 +467,7 @@ p.land {
     justify-content: space-between;
     max-width: 100%;
     padding: var(--padding);
-    margin-top: 50px;
+    margin-top: 10px;
 }
 #about .container .image {
     position: relative;
@@ -513,7 +555,7 @@ p.land {
     padding-top: 60px;
     padding-bottom: 60px;
     width: 100%;
-    background-color: #f6f6f6;
+    background-color: #5ebdc1b8;
 }
 #contact .container {
     margin: 20px;
@@ -529,6 +571,13 @@ p.land {
     padding: var(--padding);
     text-align: center;
 }
+
+#contact h2,
+#contact span {
+    opacity: 0.9;
+    color: black;
+}
+
 #contact .container .contact-content h3 ,
 #contact .container .contact-content a {
     font-size: 30px;
@@ -566,7 +615,7 @@ p.land {
     justify-content: center;
     padding: 30px 0;
     width: 100%;
-    background-color: var(--secondary-color);
+    background-color: #ebeced;
 }
 #footer .container {
     display: flex;
@@ -576,7 +625,7 @@ p.land {
 }
 #footer .container p {
     margin: 0;
-    color: white;
+    color: black;
     font-size: 18px;
     font-weight: bold;
 }
